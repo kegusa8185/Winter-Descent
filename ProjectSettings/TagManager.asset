@@ -10,6 +10,12 @@ TagManager:
   - traversal-right
   - traversal-up
   - traversal-left
+  - exit-traversal-right
+  - exit-traversal-left
+  - exit-traversal-up
+  - cam-left
+  - cam-right
+  - cam-up
   layers:
   - Default
   - TransparentFX
