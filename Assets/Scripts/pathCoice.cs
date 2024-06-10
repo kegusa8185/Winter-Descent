@@ -10,7 +10,7 @@ public class pathCoice : MonoBehaviour
     private int index = 0;
     public Camera cam;
     private bool traversing;
-    public bool goingUp = false;
+    public bool goingUp = true;
     // Start is called before the first frame update
     void Start()
     {  
