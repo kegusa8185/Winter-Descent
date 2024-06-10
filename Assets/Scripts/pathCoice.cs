@@ -29,7 +29,7 @@ public class pathCoice : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other){
         if (other.tag == "1")
         {
-            choices.Insert(index,1);
+            choices.Insert(8-index,1);
             index++;
             traversing = false;
             cam.transform.position = new Vector3(32, 0) + cam.transform.position;
@@ -37,7 +37,7 @@ public class pathCoice : MonoBehaviour
         }
         if (other.tag == "2")
         {
-            choices.Insert(index,2);
+            choices.Insert(8-index,2);
             index++;
             traversing = false;
             cam.transform.position = new Vector3(-32, 0) + cam.transform.position;
@@ -46,7 +46,7 @@ public class pathCoice : MonoBehaviour
         }
         if (other.tag == "3")
         {
-            choices.Insert(index,3);
+            choices.Insert(8-index,3);
             index++;
             traversing = false;
             cam.transform.position = new Vector3(0, 16) + cam.transform.position;
@@ -54,14 +54,14 @@ public class pathCoice : MonoBehaviour
 
         if (other.tag == "traversal-left")
         {
-            choices.Insert(index,2);
+            choices.Insert(8-index,2);
             traversing = true;
             index++;
             this.transform.position = this.transform.position + new Vector3(-8, 0, 0);
         }
         if (other.tag == "traversal-right")
         {
-            choices.Insert(index,1);
+            choices.Insert(8-index,1);
             traversing = true;
             index++;
             this.transform.position = this.transform.position + new Vector3(8, 0, 0);
@@ -69,7 +69,7 @@ public class pathCoice : MonoBehaviour
     
         if (other.tag == "traversal-up")
         {
-            choices.Insert(index,3);
+            choices.Insert(8-index,3);
             traversing = true;
             index++;
             this.transform.position = this.transform.position + new Vector3(0, 4.5f, 0);
@@ -77,7 +77,7 @@ public class pathCoice : MonoBehaviour
         
         if (other.tag == "exit-traversal-left")
         {
-            choices.Insert(index,2);
+            choices.Insert(8-index,2);
             traversing = false;
             index++;
             cam.transform.position = new Vector3(-16, 0,-100) + other.transform.position;
@@ -85,7 +85,7 @@ public class pathCoice : MonoBehaviour
         }
         if (other.tag == "exit-traversal-right")
         {
-            choices.Insert(index,1);
+            choices.Insert(8-index,1);
             traversing = false;
             index++;
             cam.transform.position = new Vector3(16, 0,-100) + other.transform.position;
@@ -93,7 +93,7 @@ public class pathCoice : MonoBehaviour
     
         if (other.tag == "exit-traversal-up")
         {
-            choices.Insert(index,3);
+            choices.Insert(8-index,3);
             traversing = false;
             index++;
             cam.transform.position = new Vector3(0, 9,-100) + other.transform.position;
