@@ -16,6 +16,8 @@ TagManager:
   - cam-left
   - cam-right
   - cam-up
+  - finish
+  - die
   layers:
   - Default
   - TransparentFX

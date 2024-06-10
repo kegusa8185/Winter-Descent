@@ -79,7 +79,7 @@ public class pathCoice : MonoBehaviour
             index++;
             if (goingUp)
             {
-                this.transform.position = this.transform.position + new Vector3(-8, 0, 0);
+                this.transform.position = this.transform.position + new Vector3(-16, 0, 0);
             }
             other.isTrigger = false;
         }
